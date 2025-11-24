@@ -1,0 +1,171 @@
+.solution {
+  padding: 160px 0;
+}
+.solutionLeftPartHeadingOne {
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 62px;
+  font-family: "Poppins", sans-serif;
+  color: #30344e;
+}
+.solutionLeftPartParagraphOne {
+  font-family: "Inter", sans-serif;
+  line-height: 32px;
+  font-size: 18px;
+  font-size: 400;
+  color: #5b5f77;
+  padding: 20px 0 40px;
+}
+.solutionLeftPartBottom {
+  display: flex;
+  column-gap: 87px;
+  margin-top: 70px;
+}
+.solutionLeftPartHeadingTwo {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 34px;
+  font-family: "Poppins", sans-serif;
+  color: #30344e;
+  margin-bottom: 12px;
+}
+.solutionLeftPartParagraphTwo {
+  font-family: "Inter", sans-serif;
+  line-height: 32px;
+  font-size: 16px;
+  font-size: 400;
+  color: #5b5f77;
+}
+
+/* animation area start */
+.solutionRightPart {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+.exprienceCard {
+  padding: 20px 25px;
+  background: #52c5b6;
+  width: 361px;
+  display: flex;
+  align-items: center;
+  column-gap: 14px;
+  position: absolute;
+  bottom: 0;
+  right: 15%;
+  z-index: 5;
+}
+.exprienceCardHeadingOne {
+  font-size: 70px;
+  font-weight: 700;
+  font-family: "Poppins", sans-serif;
+  color: #fff;
+}
+.exprienceCardHeadingTwo {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 34px;
+  font-family: "Poppins", sans-serif;
+  color: #fff;
+  width: 134px;
+}
+.exCardLine {
+  height: 3px;
+  width: 128px;
+  background: #fff;
+  position: absolute;
+  left: 59%;
+  top: 37%;
+  transform: translateY(-50%);
+  animation: bigSmall 3s ease-in-out infinite;
+}
+@keyframes bigSmall {
+  0% {
+    width: 128px;
+  }
+  50% {
+    width: 0px;
+  }
+}
+.imageSolOne {
+  position: absolute;
+  top: 95px;
+  right: 0;
+  z-index: 10;
+}
+.imageSolTwo {
+  z-index: 3;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+.imageSolThree {
+  position: absolute;
+  right: -2%;
+  top: 12%;
+  animation: imageThree 2s linear infinite;
+}
+@keyframes imageThree {
+  0% {
+    right: -2%;
+    top: 12%;
+  }
+  50% {
+    top: 10%;
+    right: -2%;
+  }
+}
+.imageSolFoures {
+  position: absolute;
+  top: 41%;
+  left: 0%;
+  z-index: 0;
+  animation: imageFourAni 2s linear infinite;
+}
+@keyframes imageFourAni {
+  0% {
+    top: 41%;
+    left: 0;
+  }
+  50% {
+    top: 40%;
+    left: 0;
+  }
+}
+
+.imageSolFive {
+  position: absolute;
+  left: 0%;
+  top: 24%;
+  z-index: 10;
+  animation: imageFive 4s infinite linear;
+}
+
+@keyframes imageFive {
+  0% {
+    left: 0%;
+    top: 24%;
+  }
+  50% {
+    left: 10%;
+    top: 24%;
+  }
+}
+.imageSolSix {
+  position: absolute;
+  bottom: 11%;
+  right: 5%;
+  animation: imageSix 2.5s infinite linear;
+}
+@keyframes imageSix {
+  0% {
+    bottom: 11%;
+    right: 5%;
+  }
+  50% {
+    right: 2%;
+    bottom: 9%;
+  }
+}
+
+/* animation area end */

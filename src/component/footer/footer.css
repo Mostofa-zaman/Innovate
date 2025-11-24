@@ -1,0 +1,88 @@
+.footer {
+  padding: 110px 0 30px;
+  background: #30344e;
+}
+.brandIndentyParagraph {
+  padding: 25px 0;
+  color: #fff !important;
+}
+.brandIndentyIconMain {
+  display: flex;
+  column-gap: 7px;
+}
+.brandIndentyIcon {
+  font-size: 25px;
+}
+.iconParent {
+  padding: 10px;
+  background: #fff;
+  border-radius: 50%;
+}
+.listFirstText {
+  font-size: 18px !important;
+  font-weight: 600 !important;
+  line-height: 32px !important;
+  font-family: "Inter", sans-serif !important;
+  color: #52c5b6 !important;
+  margin-bottom: 6px !important;
+}
+.listMain {
+  display: flex;
+  flex-direction: column;
+  row-gap: 12px;
+}
+.listMain a {
+  color: #fff;
+  font-family: "Inter", sans-serif;
+  line-height: 26px;
+  font-size: 16px;
+  font-size: 400;
+}
+.updateParagarph {
+  color: #fff;
+  font-family: "Inter", sans-serif;
+  line-height: 26px;
+  font-size: 16px;
+  font-size: 400;
+  padding: 12px 0 32px;
+}
+.footerInput::placeholder {
+  color: #a1a2a3;
+  line-height: 150%;
+  font-size: 13px;
+  font-weight: 400;
+  font-family: "Poppins", sans-serif;
+}
+.footerInput {
+  padding: 16px 25px !important;
+}
+.inputFrom {
+  position: relative;
+}
+.updateIcon {
+  font-size: 25px;
+  font-size: 25px;
+  color: #fff;
+}
+.updateIconParent {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 10px;
+  padding: 9px;
+  border-radius: 6px;
+  background: #fd5f36;
+}
+.footerDivider {
+  height: 3px;
+  width: 100%;
+  background: rgba(210, 210, 210, 0.394);
+  margin: 60px 0 24px;
+}
+.footerBottomParagarph {
+  font-family: "Inter", sans-serif;
+  line-height: 20px;
+  font-size: 16px;
+  font-size: 400;
+  color: #fff;
+}

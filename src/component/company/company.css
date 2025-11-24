@@ -1,0 +1,104 @@
+.company {
+  padding: 130px 0;
+}
+.companyImages {
+  width: 100%;
+  max-height: 630px;
+  height: 630px;
+}
+
+/* animation area start */
+
+/* animation for dot-net start  */
+
+.companyImages {
+  z-index: 1;
+}
+
+.leftSideComp {
+  position: relative;
+}
+
+.dotnet {
+  position: absolute;
+  top: -5%;
+  left: -27px;
+  z-index: -1;
+  animation: updown 3s linear infinite;
+}
+@keyframes updown {
+  0% {
+    top: -5%;
+  }
+  50% {
+    top: -2%;
+  }
+}
+.lineFilmeImage {
+  position: absolute;
+  bottom: 20px;
+  right: -70px;
+  animation: leftRight 4s infinite linear;
+  z-index: 10;
+}
+@keyframes leftRight {
+  0% {
+    bottom: 20px;
+    right: -70px;
+  }
+  50% {
+    right: -20px;
+  }
+}
+
+/* animation for dot-net end  */
+
+/* animation area end */
+
+.rightSideCompHeadingOne {
+  font-size: 20px;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+  color: #fd5f36;
+}
+.rightSideCompHeadingTwo {
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 62px;
+  font-family: "Poppins", sans-serif;
+  color: #30344e;
+  letter-spacing: -1%;
+  padding: 8px 0 20px;
+}
+.rightSideCompParagraph {
+  font-family: "Inter", sans-serif;
+  line-height: 32px;
+  font-size: 16px;
+  font-size: 400;
+  color: #5b5f77;
+}
+
+.rightSideComp ul {
+  margin: 16px 0 30px;
+}
+.rightSideComp ul li {
+  display: flex;
+  column-gap: 30px;
+  padding: 10px 0;
+}
+.rightSideComp ul li span {
+  padding: 5px;
+  background: #52c5b6;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  width: fit-content;
+}
+.rightSideCompIcon {
+  font-size: 20px;
+  color: #30344e;
+}
+.company .row {
+  align-items: center;
+}

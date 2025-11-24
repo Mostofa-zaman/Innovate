@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+/* common css */
+
+a {
+  text-decoration: none;
+  display: inline-block;
+}
+
+li {
+  list-style: none;
+}
+p,h1,h2,h3,h4,h5,h6,ul,li,ol{
+  padding: 0;
+  margin: 0;
+}
+
+/* font family */
+
+.openSence {
+  font-family: "Open Sans", sans-serif;
+}
+.poppin {
+  font-family: "Poppins", sans-serif;
+}
+.inter {
+  font-family: "Inter", sans-serif;
+}
+
+/* common paragraph */
+.commonParagraph {
+  font-family: "Inter", sans-serif;
+  line-height: 30px;
+  font-size: 16px;
+  font-size: 400;
+  color: #5b5f77;
+}
+/* heading */
+.heading1 {
+  font-size: 59px;
+  font-weight: 600;
+  line-height: 74px;
+  font-family: "Poppins", sans-serif;
+  color: #fff;
+}
+
+.heading2 {
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 62px;
+  font-family: "Poppins", sans-serif;
+  color: #30344e;
+}
+.heading3 {
+  font-size: 38px;
+  font-weight: 600;
+  line-height: 54px;
+  font-family: "Poppins", sans-serif;
+  color: #30344e;
+}
+.heading5 {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 34px;
+    font-family: "Poppins", sans-serif;
+    color: #30344e;
+}
+.heading6 {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 28px;
+  font-family: "Poppins", sans-serif;
+  color: #30344e;
+}

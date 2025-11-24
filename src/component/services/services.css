@@ -1,0 +1,109 @@
+.serviceSlider {
+ padding: 0 20px !important  ;
+}
+
+.service {
+  padding: 120px 0 170px;
+}
+.servicesTopPart {
+  margin-bottom: 58px;
+}
+.servicesTopPartHeadinOne {
+  font-size: 20px;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+  color: #fd5f36;
+}
+.servicesTopPartHeadinTwo {
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 62px;
+  font-family: "Poppins", sans-serif;
+  color: #30344e;
+  letter-spacing: -1%;
+}
+.servicesTopPartParagraph {
+  font-family: "Inter", sans-serif;
+  line-height: 30px;
+  font-size: 16px;
+  font-size: 400;
+  color: #5b5f77;
+  display: flex !important;
+  align-items: center !important;
+  height: 100%;
+}
+
+/*===================== css for slider animations start ===================*/
+
+/* .slick-prev,
+.slick-next {
+  background-color: transparent !important  ;
+  color: #282828 !important;
+  font-size: 25px;
+  background: none !important;
+  z-index: 10;
+  top: 120px;
+  position: absolute;
+} */
+
+/* .slick-prev:before {
+  content: "" !important;
+  opacity: 0 !important;
+}
+.slick-next:before {
+  content: "" !important;
+  opacity: 0 !important;
+}
+.slick-prev {
+  left: 34% !important;
+}
+
+.slick-next {
+  right: 37% !important;
+} */
+.slick-dots {
+  bottom: -90px;
+}
+.slick-dots li {
+  width: 25px;
+  height: 25px;
+}
+.slick-dots li.slick-active button:before {
+  opacity: 0.75;
+  color: #fd5f36;
+}
+.slick-dots li button:before {
+  font-size: 20px;
+  color: #fd5f36;
+}
+.arrowRight:hover {
+  background: #fd5f36;
+  color: #fff;
+}
+.arrowLeft:hover {
+  background: #fd5f36;
+  color: #fff;
+}
+.arrowRight,
+.arrowLeft {
+  position: absolute;
+  bottom: -100px;
+  font-size: 25px;
+  padding: 15px;
+  border: 1px solid #cecece;
+  color: #cecece;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  transition: 0.2s ease-in-out !important;
+  z-index: 10;
+}
+.arrowLeft {
+  left: 33%;
+}
+.arrowRight {
+  right: 33%;
+}
+
+/*===================== css for slider animations  end===================*/

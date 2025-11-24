@@ -1,0 +1,17 @@
+.commonButtonClass {
+  padding: 14px 28px;
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+  line-height: 200%;
+  font: 18px;
+  font-weight: 500;
+  border-radius: 5px;
+  background: #FD5F36;
+  border: 1px solid #FD5F36;
+  transition: 0.3s ease-in-out;
+}
+.commonButtonClass:hover {
+  background: transparent;
+  color: #FD5F36;
+  border-color:#FD5F36 ;
+}

@@ -1,0 +1,100 @@
+.sliderCardMain {
+  background: #f44c4c;
+  border-radius: 12px;
+  height: 368px;
+  max-width: 368px;
+  width: 100%;
+  z-index: 0;
+  position: relative;
+}
+.sliderCardMain:hover .sliderCardElement {
+  transform: translateY(-12px);
+}
+
+.sliderCardElement {
+  padding: 40px 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  text-align: center;
+  border-radius: 10px;
+  background: #fff;
+  transform: translateY(0);
+  transition: 0.3s ease-in-out;
+  height: 368px;
+  max-width: 368px;
+  width: 101%;
+  z-index: 1;
+  left: -1.5px;
+}
+.sliderImage {
+  height: 84px;
+  width: 84px;
+  border-radius: 50%;
+}
+
+.sliderCardHeading {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 28px;
+  font-family: "Poppins", sans-serif;
+  color: #30344e;
+  padding: 30px 0 14px;
+}
+.sliderCardParagraph {
+  font-family: "Inter", sans-serif;
+  line-height: 30px;
+  font-size: 16px;
+  font-size: 400;
+  color: #5b5f77;
+}
+
+/* circle round animations start */
+.sliderParent {
+  height: 110px;
+  width: 110px;
+  border: 1px solid #f44c4c;
+  position: absolute;
+  top: 26px;
+  left: 50%;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: circleRun 5s linear infinite;
+}
+@keyframes circleRun {
+  0% {
+    transform: translateX(-50%) rotate(0deg);
+  }
+  100% {
+    transform: translateX(-50%) rotate(360deg);
+  }
+}
+.sliderDot {
+  height: 13px;
+  width: 13px;
+  border-radius: 50%;
+  background: #f44c4c;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(calc(-50% + 55px), -50%);
+}
+
+/* hover animation start */
+
+.bottomline {
+  height: 15px;
+  width: 100%;
+  background-color: #f44c4c;
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  z-index: -1;
+}
+
+/* hover animation end */
+
+/* circle round animations end */

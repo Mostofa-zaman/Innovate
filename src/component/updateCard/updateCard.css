@@ -1,0 +1,55 @@
+.updateCardHeading {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 34px;
+  font-family: "Poppins", sans-serif;
+  color: #30344e;
+  padding: 20px 0 8px;
+}
+
+.updateCardParagraph {
+  font-family: "Inter", sans-serif;
+  line-height: 30px;
+  font-size: 18px;
+  font-size: 400;
+  color: #5b5f77;
+}
+.updateCardElement {
+  border: 0 !important;
+}
+.nameDatePart {
+  display: flex;
+  padding-left: 0 !important;
+}
+.nameDatePartOne {
+  padding-left: 0 !important;
+}
+.nameDatePartCommon {
+  display: flex;
+  align-items: center;
+  gap: 17px;
+}
+.nameDatePartPersonImage {
+  height: 53px !important;
+  width: 53px !important;
+  border-radius: 50% !important;
+  object-fit: cover;
+}
+.updateCardParagraphTwo {
+  font-family: "Inter", sans-serif;
+  line-height: 30px;
+  font-size: 16px;
+  font-size: 400;
+  color: #5b5f77;
+  white-space: nowrap;
+}
+.card-img,
+.card-img-bottom,
+.card-img-top {
+  width: 100%;
+  height: 280px;
+  max-height: 280px;
+}
+.updateCardIcon{
+  font-size: 20px;
+}

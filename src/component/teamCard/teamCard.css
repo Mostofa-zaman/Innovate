@@ -1,0 +1,145 @@
+.teamCardElement {
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
+  position: relative;
+}
+
+.teamCardImages {
+  /* width: 330px;
+  height: 374px; */
+  height: 374px;
+  max-height: 374px;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.teamCardElement:hover .teamCardLine {
+  background: #fff;
+}
+.teamCardElement:hover .teamCardTitle * {
+  color: #fff;
+}
+.teamCardElement:hover .teamCardText {
+  background: #52c5b6;
+}
+
+.teamCardText {
+  background-color: #fff;
+  width: 210px;
+  padding: 22px 20px;
+  display: flex;
+  column-gap: 14px;
+  border-top-right-radius: 10px;
+  position: absolute;
+  top: 100%;
+  transform: translateY(-75%);
+  left: 0%;
+  transition: 0.3s ease-in-out;
+}
+.teamCardLine {
+  width: 32px;
+  height: 3px;
+  background: #52c5b6;
+  margin-top: 8px;
+  transition: 0.3s ease-in-out;
+}
+.teamCardText .teamCardTitle {
+}
+.teamCardText .teamCardTitle h6 {
+  font-size: 18px;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+  color: #30344e;
+  transition: 0.3s ease-in-out;
+  padding-bottom: 7px;
+}
+.teamCardText .teamCardTitle p {
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  font-size: 400;
+  color: #5b5f77;
+  transition: 0.3s ease-in-out;
+}
+
+/* animation area start*/
+
+/* hover animations start */
+
+.teamCardIcon {
+  /* position: absolute;
+  right: 5%;
+  bottom: 4%; */
+}
+
+.teamCardIconOne {
+  right: 5%;
+  bottom: 4%;
+  z-index: 10;
+}
+
+.teamCardElement:hover .teamCardIconOne {
+  background: #52c5b6 !important ;
+  color: #fff;
+}
+
+.teamCardElement:hover .crossIcon {
+  transform: rotate(310deg);
+}
+.teamCardCommonCss {
+  padding: 12px;
+  background: #fff;
+  border-radius: 50%;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  position: absolute;
+}
+.teamCardOtherIcon {
+  font-size: 20px;
+}
+.crossIcon {
+  font-size: 20px;
+  transition: 0.5s ease-in-out;
+}
+.teamCardIconTwo {
+  right: 5% !important;
+  bottom: 4% !important;
+  transition: 0.5s all linear;
+  z-index: 1;
+}
+.teamCardIconThree {
+  right: 5%;
+  bottom: 4%;
+  z-index: 2;
+  transition: 0.5s all linear;
+}
+.teamCardIconFour {
+  right: 5%;
+  bottom: 4%;
+  z-index: 3;
+  transition: 0.5s all linear;
+}
+
+.teamCardElement:hover .teamCardIconTwo {
+  right: 5%;
+  bottom: 20% !important;
+}
+.teamCardElement:hover .teamCardIconThree {
+  right: 5%;
+  bottom: 36% !important;
+}
+.teamCardElement:hover .teamCardIconFour {
+  right: 5%;
+  bottom: 52% !important;
+}
+.teamCardOtherIcon {
+  transition: 0.5s all linear;
+}
+.teamCardOtherIcon:hover {
+  transform: rotate(360deg);
+}
+/* hover animations end */
+
+/* animation area end*/

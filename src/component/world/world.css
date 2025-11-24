@@ -1,0 +1,46 @@
+.worldMain {
+  padding: 110px 0;
+  margin: 230px 0 120px;
+  background: #52c5b6;
+}
+.worldLeftSideHeading {
+  font-size: 37px;
+  font-weight: 600;
+  line-height: 54px;
+  font-family: "Poppins", sans-serif;
+  color: #fff;
+  padding-bottom: 40px;
+}
+.worldButton:hover {
+  border-color: #fff !important;
+  color: #fff !important;
+}
+.worldRightSideRationText h1 {
+  font-size: 59px;
+  font-weight: 600;
+  line-height: 74px;
+  font-family: "Poppins", sans-serif;
+  color: #fff;
+}
+.worldRightSideRationText p {
+  font-family: "Inter", sans-serif;
+  line-height: 30px;
+  font-size: 20px;
+  font-size: 400;
+  color: #fff;
+  white-space: nowrap;
+  padding-top: 24px;
+}
+.worldRightSideRation{
+  display: flex;
+  column-gap: 100px;
+}
+.slick-arrow{
+  display: none !important  ;
+}
+.worldSlider{
+  margin-top: 60px;
+}
+.sliderImage{
+
+}

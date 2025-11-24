@@ -1,0 +1,23 @@
+.customerHeading {
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 62px;
+  font-family: "Poppins", sans-serif;
+  color: #30344e;
+}
+.customerMain{
+
+}
+
+
+.customerSliderContainer{
+  margin-top: 60px;
+
+}
+.coustomerSliderImageParent{
+  height: 400px;
+}
+.coustomerSliderImage{
+    height: 100%;
+    width: 100%;
+}

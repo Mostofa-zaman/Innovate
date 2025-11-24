@@ -1,0 +1,22 @@
+.updateMain {
+  padding: 130px 0;
+}
+.updateTopPart {
+  text-align: center;
+  margin-bottom: 60px;
+}
+.updateTopPartHeadingOne {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 28px;
+  font-family: "Poppins", sans-serif;
+  color: #fd5f36;
+  padding-bottom: 8px;
+}
+.updateTopPartHeadingTwo {
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 62px;
+  font-family: "Poppins", sans-serif;
+  color: #30344e;
+}

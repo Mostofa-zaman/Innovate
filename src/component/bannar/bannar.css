@@ -1,0 +1,305 @@
+.bannar {
+  background: #30344e;
+  padding: 62px 0 92px;
+  position: relative;
+  overflow: hidden;
+}
+.bannarParagraphOne {
+  padding: 24px 0 40px;
+  color: #fff;
+}
+.bannarParapraphTwo {
+  padding: 50px 0 70px;
+  color: #fff;
+}
+
+.bannarParapraphTwo span a {
+  color: #52c5b6 !important;
+  font-size: 20px !important;
+  font-weight: 700 !important;
+  line-height: 30px !important;
+  font-family: "Inter", sans-serif !important;
+}
+.bannarImage {
+  position: absolute;
+  height: 100%;
+  width: 50%;
+  top: 0;
+  right: 0;
+}
+.bannarMan {
+  position: absolute;
+  top: 100%;
+  max-height: 750px;
+  height: 750px;
+  right: 25%;
+  transform: translate(50%, -100%);
+}
+/* ==========animation area start====== */
+/* ======= animation for images start======== */
+.review {
+  display: flex !important;
+}
+.reviewImage {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  display: inline-block;
+  object-fit: cover;
+}
+.reviewImagesParent {
+  position: relative;
+}
+.reviewText {
+  margin-left: 200px;
+  display: flex;
+  flex-direction: column;
+}
+.rimgone {
+  position: absolute;
+  top: 0;
+  left: 0px;
+  animation: rOne 2s ease-in-out infinite;
+  z-index: 1;
+}
+.rimgtwo {
+  position: absolute;
+  top: 0;
+  left: 35px;
+  animation: rTwo 2s linear infinite;
+  z-index: 2;
+}
+.rimgthree {
+  position: absolute;
+  top: 0;
+  left: 75px;
+  animation: rThree 2s linear infinite;
+  z-index: 3;
+}
+.rimgfour {
+  position: absolute;
+  top: 0;
+  left: 105px;
+  animation: rFour 2s linear infinite;
+  z-index: 4;
+}
+
+@keyframes rTwo {
+  0% {
+    top: 0;
+    left: 35px;
+  }
+  50% {
+    top: 0;
+    left: 0;
+  }
+}
+
+@keyframes rThree {
+  0% {
+    top: 0;
+    left: 70px;
+  }
+  50% {
+    top: 0;
+    left: 0;
+  }
+}
+@keyframes rFour {
+  0% {
+    top: 0;
+    left: 105px;
+  }
+  50% {
+    top: 0;
+    left: 0;
+  }
+}
+/* ======= animation for images end======== */
+
+/* ======= animation for sign button arrow start======== */
+.signButton {
+  position: relative;
+}
+.arrowImage {
+  position: absolute;
+  top: -78px;
+  left: 50%;
+  animation: updowns 4s ease-in-out infinite;
+}
+@keyframes updowns {
+  0% {
+    top: -78px;
+    left: 50%;
+  }
+  50% {
+    top: -55px;
+    left: 47%;
+  }
+}
+/* ======= animation for sign button arrow  end======== */
+
+/* ======= animation for video aimation  start======== */
+
+.videoPlay {
+  background: #373b59;
+  height: 220px;
+  width: 220px;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translate(-100%, -100%);
+  z-index: 0;
+  border-top-left-radius: 10px;
+}
+.round {
+  position: absolute;
+  height: 120px;
+  width: 120px;
+  background: rgba(253, 253, 253, 0.202);
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  animation: withLoss 3s linear infinite;
+}
+@keyframes withLoss {
+  0% {
+    width: 120px;
+  }
+  50% {
+    width: 90px;
+    height: 90px;
+  }
+}
+.roundPlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 45px;
+  width: 45px;
+  animation: increaceDecreace 3s ease-in-out infinite;
+}
+@keyframes increaceDecreace {
+  0% {
+    height: 45px;
+    width: 45px;
+  }
+  50% {
+    height: 20px;
+    width: 20px;
+  }
+}
+
+/* ======= animation for svideo aimation  end ======== */
+/* ======= animation for line fire aimation  start ======== */
+
+.lineFireAnim {
+  position: absolute;
+  bottom: 254px;
+  right: 43%;
+  transform: translateX(-100%);
+  animation: leftright 4s linear infinite;
+}
+@keyframes leftright {
+  0% {
+    bottom: 254px;
+    right: 43%;
+  }
+  50% {
+    bottom: 256px;
+    right: 47%;
+  }
+}
+/* ======= animation for line fire aimation  end ======== */
+
+/* ======= animation for circle aimation  start ======== */
+
+.circle {
+  position: absolute;
+  width: 175px;
+  height: 175px;
+  border: 1px solid #ffffff;
+  border-radius: 50%;
+  top: 2%;
+  left: -7%;
+  animation: roamRun 6s linear infinite;
+}
+@keyframes roamRun {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.dot {
+  position: absolute;
+  width: 37px;
+  height: 37px;
+  background: #fd5f36;
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(calc(-50% + 87.5px), -50%);
+}
+
+/* ======= animation for circle aimation  end ======== */
+/* ======= animation for circle two aimation  start ======== */
+
+.circleTwo {
+  position: absolute;
+  width: 175px;
+  height: 175px;
+  border: 1px solid #ffffff;
+  border-radius: 50%;
+  bottom: 4%;
+  right: -6%;
+  animation: roamRuntwo 6s linear infinite;
+}
+@keyframes roamRuntwo {
+  0% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+.dotTwo {
+  position: absolute;
+  width: 37px;
+  height: 37px;
+  background: #f336fd;
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(calc(-50% + 87.5px), -50%);
+}
+
+/* ======= animation for circle two aimation  end ======== */
+
+/*====== animation area end====== */
+
+.reviewNumber {
+  font-size: 26px;
+  font-weight: 700;
+  font-family: "Inter", sans-serif;
+  letter-spacing: -2%;
+  color: #52c5b6;
+  margin-right: 20px;
+}
+.reviewStar {
+  color: #fdb400;
+  font-size: 20px;
+}
+.reviewNumRating {
+  display: flex;
+}
+.reviewParagarph p {
+  font-size: 18px;
+  font-weight: 600;
+  color: #fff;
+  font-family: "Inter", sans-serif;
+}
