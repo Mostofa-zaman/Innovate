@@ -86,3 +86,94 @@
   font-size: 400;
   color: #fff;
 }
+
+
+/* responsive code  */
+
+@media (max-width: 991px) {
+  .footer {
+    padding: 90px 0 30px;
+  }
+
+  .brandIndentyIconMain {
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    row-gap: 10px;
+  }
+
+  .listMain {
+    row-gap: 10px;
+  }
+
+  .updateParagarph {
+    padding: 10px 0 24px;
+  }
+
+  .footerDivider {
+    margin: 40px 0 20px;
+  }
+}
+
+
+
+@media (max-width: 575px) {
+  .footer {
+    padding: 70px 0 25px;
+    text-align: center;
+  }
+
+  .brandIndentyIconMain {
+    justify-content: center;
+  }
+
+  .iconParent {
+    padding: 8px;
+  }
+
+  .brandIndentyIcon {
+    font-size: 22px;
+  }
+
+  .listMain {
+    align-items: center;
+  }
+
+  .updateParagarph {
+    font-size: 14px;
+    line-height: 24px;
+  }
+
+  .inputFrom {
+    max-width: 320px;
+    margin: 0 auto;
+  }
+
+  .footerInput {
+    padding: 14px 45px 14px 20px !important;
+  }
+
+  .updateIconParent {
+    right: 8px;
+  }
+
+  .footerDivider {
+    margin: 35px 0 18px;
+  }
+
+  .footerBottomParagarph {
+    font-size: 14px;
+  }
+}
+@media (max-width: 400px) {
+  .footer {
+    padding: 60px 0 20px;
+  }
+
+  .listFirstText {
+    font-size: 16px !important;
+  }
+
+  .footerBottomParagarph {
+    font-size: 13px;
+  }
+}
