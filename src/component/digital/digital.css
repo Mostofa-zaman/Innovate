@@ -119,3 +119,102 @@
   border-top: 1px solid #c8c8c8 !important;
   border-bottom: 1px solid #c8c8c8 !important;
 }
+
+
+/* responsive code */
+
+@media (max-width: 991px) {
+  .digitalImageOne {
+    height: auto;
+    max-height: 520px;
+    width: auto;
+    max-width: 100%;
+  }
+
+  .digitalImageTwo {
+    height: 280px;
+    width: auto;
+    right: 0;
+  }
+
+  .digitalImageTree {
+    height: 90px;
+    width: 90px;
+    left: -10px;
+  }
+
+  .digitalImageFour {
+    display: none;
+  }
+
+  .digitalLeftPartHeading {
+    font-size: 36px;
+    line-height: 48px;
+    white-space: normal;
+    margin-bottom: 35px;
+  }
+
+  .accordion-button {
+    font-size: 18px !important;
+    line-height: 30px !important;
+  }
+}
+
+
+
+
+@media (max-width: 575px) {
+  .digitalAnimation {
+    text-align: center;
+  }
+
+  .digitalImageOne {
+    max-height: 360px;
+    margin: 0 auto;
+    display: block;
+  }
+
+  .digitalImageTwo {
+    position: relative;
+    top: auto;
+    right: auto;
+    margin: 20px auto 0;
+    animation: none;
+  }
+
+  .digitalImageTree,
+  .digitalImageFour,
+  .digitalImageFive {
+    display: none;
+  }
+
+  .digitalLeftPartHeading {
+    font-size: 28px;
+    line-height: 38px;
+    margin-bottom: 25px;
+  }
+
+  .accordion-button {
+    font-size: 16px !important;
+    line-height: 26px !important;
+    padding: 14px;
+  }
+
+  .accordion-body {
+    font-size: 14px;
+    line-height: 26px;
+  }
+}
+
+
+
+@media (max-width: 400px) {
+  .digitalLeftPartHeading {
+    font-size: 24px;
+    line-height: 34px;
+  }
+
+  .accordion-button {
+    font-size: 15px !important;
+  }
+}
