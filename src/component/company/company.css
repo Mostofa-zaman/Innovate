@@ -102,3 +102,95 @@
 .company .row {
   align-items: center;
 }
+
+
+/* responsive code */
+
+@media (max-width: 991px) {
+  .company {
+    padding: 100px 0;
+  }
+
+  .companyImages {
+    height: auto;
+    max-height: 480px;
+  }
+
+  .dotnet {
+    left: -10px;
+    top: -3%;
+  }
+
+  .lineFilmeImage {
+    right: -30px;
+  }
+
+  .rightSideCompHeadingTwo {
+    font-size: 36px;
+    line-height: 48px;
+  }
+
+  .rightSideCompParagraph {
+    line-height: 28px;
+  }
+
+  .rightSideComp ul li {
+    column-gap: 20px;
+  }
+}
+
+
+
+@media (max-width: 575px) {
+  .company {
+    padding: 70px 0;
+    text-align: center;
+  }
+
+  .companyImages {
+    width: 100%;
+    max-height: 320px;
+    margin-bottom: 40px;
+  }
+
+  .dotnet,
+  .lineFilmeImage {
+    display: none;
+  }
+
+  .rightSideCompHeadingOne {
+    font-size: 18px;
+  }
+
+  .rightSideCompHeadingTwo {
+    font-size: 28px;
+    line-height: 38px;
+  }
+
+  .rightSideCompParagraph {
+    font-size: 14px;
+    line-height: 26px;
+  }
+
+  .rightSideComp ul {
+    padding: 0;
+  }
+
+  .rightSideComp ul li {
+    justify-content: center;
+    column-gap: 15px;
+  }
+}
+
+
+
+@media (max-width: 400px) {
+  .rightSideCompHeadingTwo {
+    font-size: 24px;
+    line-height: 34px;
+  }
+
+  .rightSideCompIcon {
+    font-size: 18px;
+  }
+}
