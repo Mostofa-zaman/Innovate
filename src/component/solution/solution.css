@@ -1,77 +1,91 @@
+/* ------------------ SOLUTION SECTION ------------------ */
 .solution {
-  padding: 160px 0;
+  padding: clamp(80px, 10vw, 160px) 5%;
+  position: relative;
 }
+
+/* Left Part */
 .solutionLeftPartHeadingOne {
-  font-size: 48px;
+  font-size: clamp(28px, 5vw, 48px);
   font-weight: 600;
-  line-height: 62px;
+  line-height: clamp(36px, 6vw, 62px);
   font-family: "Poppins", sans-serif;
   color: #30344e;
 }
+
 .solutionLeftPartParagraphOne {
   font-family: "Inter", sans-serif;
-  line-height: 32px;
-  font-size: 18px;
-  font-size: 400;
+  line-height: clamp(24px, 4vw, 32px);
+  font-size: clamp(14px, 2vw, 18px);
+  font-weight: 400;
   color: #5b5f77;
-  padding: 20px 0 40px;
+  padding: clamp(10px, 2vw, 20px) 0 clamp(20px, 4vw, 40px);
 }
+
 .solutionLeftPartBottom {
   display: flex;
-  column-gap: 87px;
-  margin-top: 70px;
+  flex-wrap: wrap;
+  gap: clamp(20px, 5vw, 87px);
+  margin-top: clamp(30px, 7vw, 70px);
 }
+
 .solutionLeftPartHeadingTwo {
-  font-size: 24px;
+  font-size: clamp(18px, 3vw, 24px);
   font-weight: 600;
-  line-height: 34px;
+  line-height: clamp(28px, 4vw, 34px);
   font-family: "Poppins", sans-serif;
   color: #30344e;
-  margin-bottom: 12px;
+  margin-bottom: clamp(6px, 1.5vw, 12px);
 }
+
 .solutionLeftPartParagraphTwo {
   font-family: "Inter", sans-serif;
-  line-height: 32px;
-  font-size: 16px;
-  font-size: 400;
+  line-height: clamp(24px, 3vw, 32px);
+  font-size: clamp(14px, 2vw, 16px);
+  font-weight: 400;
   color: #5b5f77;
 }
 
-/* animation area start */
+/* Right Part */
 .solutionRightPart {
   position: relative;
-  height: 100%;
   width: 100%;
+  height: 100%;
 }
+
+/* Experience Card */
 .exprienceCard {
-  padding: 20px 25px;
+  padding: clamp(10px, 2vw, 20px) clamp(12px, 3vw, 25px);
   background: #52c5b6;
-  width: 361px;
+  width: clamp(260px, 30vw, 361px);
   display: flex;
   align-items: center;
-  column-gap: 14px;
+  gap: clamp(8px, 2vw, 14px);
   position: absolute;
-  bottom: 0;
-  right: 15%;
+  bottom: clamp(10px, 5%, 0px);
+  right: clamp(5%, 10vw, 15%);
   z-index: 5;
 }
+
 .exprienceCardHeadingOne {
-  font-size: 70px;
+  font-size: clamp(40px, 8vw, 70px);
   font-weight: 700;
   font-family: "Poppins", sans-serif;
   color: #fff;
 }
+
 .exprienceCardHeadingTwo {
-  font-size: 24px;
+  font-size: clamp(18px, 4vw, 24px);
   font-weight: 600;
-  line-height: 34px;
+  line-height: clamp(28px, 4vw, 34px);
   font-family: "Poppins", sans-serif;
   color: #fff;
-  width: 134px;
+  width: clamp(100px, 25%, 134px);
 }
+
 .exCardLine {
   height: 3px;
-  width: 128px;
+  width: clamp(80px, 15vw, 128px);
   background: #fff;
   position: absolute;
   left: 59%;
@@ -79,42 +93,49 @@
   transform: translateY(-50%);
   animation: bigSmall 3s ease-in-out infinite;
 }
+
 @keyframes bigSmall {
   0% {
-    width: 128px;
+    width: clamp(80px, 15vw, 128px);
   }
   50% {
     width: 0px;
   }
 }
+
+/* Images - Fully Fluid Positions */
 .imageSolOne {
   position: absolute;
-  top: 95px;
-  right: 0;
+  top: clamp(40px, 10%, 95px);
+  right: clamp(0px, 0%, 0px);
   z-index: 10;
 }
+
 .imageSolTwo {
-  z-index: 3;
   position: absolute;
-  left: 0;
-  bottom: 0;
+  left: clamp(0px, 0%, 0px);
+  bottom: clamp(0px, 0%, 0px);
+  z-index: 3;
 }
+
 .imageSolThree {
   position: absolute;
   right: -2%;
   top: 12%;
   animation: imageThree 2s linear infinite;
 }
+
 @keyframes imageThree {
   0% {
     right: -2%;
     top: 12%;
   }
   50% {
-    top: 10%;
     right: -2%;
+    top: 10%;
   }
 }
+
 .imageSolFoures {
   position: absolute;
   top: 41%;
@@ -122,6 +143,7 @@
   z-index: 0;
   animation: imageFourAni 2s linear infinite;
 }
+
 @keyframes imageFourAni {
   0% {
     top: 41%;
@@ -138,7 +160,7 @@
   left: 0%;
   top: 24%;
   z-index: 10;
-  animation: imageFive 4s infinite linear;
+  animation: imageFive 4s linear infinite;
 }
 
 @keyframes imageFive {
@@ -151,21 +173,54 @@
     top: 24%;
   }
 }
+
 .imageSolSix {
   position: absolute;
   bottom: 11%;
   right: 5%;
-  animation: imageSix 2.5s infinite linear;
+  animation: imageSix 2.5s linear infinite;
 }
+
 @keyframes imageSix {
   0% {
     bottom: 11%;
     right: 5%;
   }
   50% {
-    right: 2%;
     bottom: 9%;
+    right: 2%;
   }
 }
 
-/* animation area end */
+/* MOBILE OPTIMIZATION - Optional Enhancements for Very Small Devices */
+@media (max-width: 480px) {
+  .solutionLeftPartBottom {
+    flex-direction: column;
+    gap: clamp(15px, 8vw, 50px);
+  }
+
+  .exprienceCard {
+    width: clamp(180px, 60vw, 260px);
+    bottom: 5%;
+    right: 5%;
+    padding: clamp(8px, 4vw, 15px);
+  }
+
+  .exprienceCardHeadingOne {
+    font-size: clamp(24px, 15vw, 32px);
+  }
+
+  .exprienceCardHeadingTwo {
+    font-size: clamp(14px, 6vw, 18px);
+  }
+
+  .solutionLeftPartHeadingOne {
+    font-size: clamp(20px, 10vw, 28px);
+  }
+
+  .solutionLeftPartParagraphOne,
+  .solutionLeftPartParagraphTwo {
+    font-size: clamp(12px, 4vw, 14px);
+    line-height: clamp(18px, 5vw, 24px);
+  }
+}
