@@ -107,3 +107,128 @@
 }
 
 /*===================== css for slider animations  end===================*/
+/* responsive code  */
+
+@media (max-width: 1199px) {
+  .service {
+    padding: 100px 0 140px;
+  }
+
+  .servicesTopPart {
+    margin-bottom: 45px;
+  }
+
+  .servicesTopPartHeadinTwo {
+    font-size: 40px;
+    line-height: 52px;
+  }
+
+  .servicesTopPartParagraph {
+    font-size: 15px;
+    line-height: 28px;
+  }
+
+  .arrowLeft {
+    left: 30%;
+  }
+
+  .arrowRight {
+    right: 30%;
+  }
+
+  .slick-dots {
+    bottom: -70px;
+  }
+}
+
+
+
+@media (max-width: 991px) {
+  .service {
+    padding: 80px 0 120px;
+  }
+
+  .servicesTopPartHeadinTwo {
+    font-size: 32px;
+    line-height: 44px;
+    text-align: center;
+  }
+
+  .servicesTopPartHeadinOne,
+  .servicesTopPartParagraph {
+    text-align: center;
+  }
+
+  .arrowLeft,
+  .arrowRight {
+    bottom: -80px;
+    padding: 12px;
+    font-size: 22px;
+  }
+
+  .slick-dots {
+    bottom: -60px;
+  }
+}
+
+
+@media (max-width: 767px) {
+  .service {
+    padding: 60px 0 100px;
+  }
+
+  .servicesTopPartHeadinTwo {
+    font-size: 28px;
+    line-height: 36px;
+  }
+
+  .servicesTopPartHeadinOne {
+    font-size: 18px;
+  }
+
+  .servicesTopPartParagraph {
+    font-size: 14px;
+    line-height: 24px;
+  }
+
+  .arrowLeft,
+  .arrowRight {
+    bottom: -70px;
+    left: 20%;
+    right: 20%;
+    font-size: 20px;
+    padding: 10px;
+  }
+
+  .slick-dots {
+    bottom: -50px;
+  }
+}
+
+
+@media (max-width: 400px) {
+  .servicesTopPartHeadinTwo {
+    font-size: 24px;
+    line-height: 32px;
+  }
+
+  .servicesTopPartHeadinOne {
+    font-size: 16px;
+  }
+
+  .servicesTopPartParagraph {
+    font-size: 13px;
+    line-height: 22px;
+  }
+
+  .arrowLeft,
+  .arrowRight {
+    font-size: 18px;
+    padding: 8px;
+  }
+
+  .slick-dots li {
+    width: 18px;
+    height: 18px;
+  }
+}
