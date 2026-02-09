@@ -1,46 +1,107 @@
+/* ------------------ WORLD SECTION ------------------ */
 .worldMain {
-  padding: 110px 0;
-  margin: 230px 0 120px;
+  padding: clamp(60px, 10vw, 110px) 5%;
+  margin: clamp(100px, 15vw, 230px) 0 clamp(60px, 10vw, 120px);
   background: #52c5b6;
 }
+
+/* Left Side Heading */
 .worldLeftSideHeading {
-  font-size: 37px;
+  font-size: clamp(24px, 5vw, 37px);
   font-weight: 600;
-  line-height: 54px;
+  line-height: clamp(32px, 6vw, 54px);
   font-family: "Poppins", sans-serif;
   color: #fff;
-  padding-bottom: 40px;
+  padding-bottom: clamp(20px, 5vw, 40px);
 }
+
+/* Button Hover */
 .worldButton:hover {
   border-color: #fff !important;
   color: #fff !important;
 }
+
+/* Right Side Stats */
 .worldRightSideRationText h1 {
-  font-size: 59px;
+  font-size: clamp(32px, 8vw, 59px);
   font-weight: 600;
-  line-height: 74px;
+  line-height: clamp(38px, 8vw, 74px);
   font-family: "Poppins", sans-serif;
   color: #fff;
 }
+
 .worldRightSideRationText p {
   font-family: "Inter", sans-serif;
-  line-height: 30px;
-  font-size: 20px;
-  font-size: 400;
+  line-height: clamp(22px, 3vw, 30px);
+  font-size: clamp(14px, 2.5vw, 20px);
+  font-weight: 400;
   color: #fff;
   white-space: nowrap;
-  padding-top: 24px;
+  padding-top: clamp(12px, 2vw, 24px);
 }
-.worldRightSideRation{
-  display: flex;
-  column-gap: 100px;
-}
-.slick-arrow{
-  display: none !important  ;
-}
-.worldSlider{
-  margin-top: 60px;
-}
-.sliderImage{
 
+/* Stats container */
+.worldRightSideRation {
+  display: flex;
+  flex-wrap: wrap;
+  gap: clamp(40px, 5vw, 100px);
+}
+
+/* Slider */
+.worldSlider {
+  margin-top: clamp(30px, 5vw, 60px);
+}
+
+/* Hide slick arrows */
+.slick-arrow {
+  display: none !important;
+}
+
+/* Slider images placeholder */
+.sliderImage {
+  width: 100%;
+  height: auto;
+}
+
+/* ------------------ MOBILE OPTIMIZATION ------------------ */
+@media (max-width: 768px) {
+  .worldRightSideRation {
+    flex-direction: column;
+    gap: clamp(20px, 5vw, 50px);
+  }
+
+  .worldLeftSideHeading {
+    text-align: center;
+  }
+
+  .worldSlider {
+    margin-top: clamp(20px, 5vw, 40px);
+  }
+
+  .worldRightSideRationText p {
+    white-space: normal;
+    text-align: center;
+  }
+
+  .worldRightSideRationText h1 {
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .worldLeftSideHeading {
+    font-size: clamp(20px, 8vw, 28px);
+    line-height: clamp(28px, 6vw, 36px);
+  }
+
+  .worldRightSideRationText h1 {
+    font-size: clamp(24px, 10vw, 32px);
+    line-height: clamp(28px, 10vw, 38px);
+  }
+
+  .worldRightSideRationText p {
+    font-size: clamp(12px, 4vw, 16px);
+    line-height: clamp(18px, 4vw, 24px);
+    padding-top: clamp(8px, 2vw, 16px);
+  }
 }

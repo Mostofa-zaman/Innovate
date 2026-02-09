@@ -1,22 +1,59 @@
+/* ------------------ UPDATE SECTION ------------------ */
 .updateMain {
-  padding: 130px 0;
+  padding: clamp(60px, 10vw, 130px) 5%;
 }
+
 .updateTopPart {
   text-align: center;
-  margin-bottom: 60px;
+  margin-bottom: clamp(30px, 5vw, 60px);
 }
+
 .updateTopPartHeadingOne {
-  font-size: 20px;
+  font-size: clamp(14px, 3vw, 20px);
   font-weight: 600;
-  line-height: 28px;
+  line-height: clamp(20px, 4vw, 28px);
   font-family: "Poppins", sans-serif;
   color: #fd5f36;
-  padding-bottom: 8px;
+  padding-bottom: clamp(4px, 1vw, 8px);
 }
+
 .updateTopPartHeadingTwo {
-  font-size: 48px;
+  font-size: clamp(28px, 6vw, 48px);
   font-weight: 600;
-  line-height: 62px;
+  line-height: clamp(36px, 7vw, 62px);
   font-family: "Poppins", sans-serif;
   color: #30344e;
+}
+
+/* ------------------ MOBILE OPTIMIZATION ------------------ */
+@media (max-width: 768px) {
+  .updateTopPartHeadingTwo {
+    font-size: clamp(24px, 7vw, 36px);
+    line-height: clamp(30px, 7vw, 44px);
+  }
+
+  .updateTopPartHeadingOne {
+    font-size: clamp(12px, 4vw, 18px);
+    line-height: clamp(18px, 4vw, 24px);
+  }
+
+  .updateMain {
+    padding: clamp(50px, 8vw, 100px) 5%;
+  }
+
+  .updateTopPart {
+    margin-bottom: clamp(20px, 5vw, 40px);
+  }
+}
+
+@media (max-width: 480px) {
+  .updateTopPartHeadingTwo {
+    font-size: clamp(20px, 8vw, 28px);
+    line-height: clamp(26px, 8vw, 36px);
+  }
+
+  .updateTopPartHeadingOne {
+    font-size: clamp(10px, 5vw, 16px);
+    line-height: clamp(14px, 5vw, 20px);
+  }
 }

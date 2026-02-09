@@ -1,40 +1,41 @@
-/* team section One start  */
-
+/* ------------------ TEAM SECTION ONE ------------------ */
 .teamOneMain {
-  padding: 80px 0 221px;
+  padding: clamp(60px, 8vw, 80px) 5% clamp(120px, 15vw, 221px);
   background: #30344e;
   position: relative;
   overflow: hidden;
 }
+
 .teamOne {
   display: flex;
   flex-direction: column;
   align-items: center;
-  row-gap: 8px;
+  row-gap: clamp(6px, 1vw, 8px);
 }
+
 .teamHeadingOne {
-  font-size: 20px;
+  font-size: clamp(14px, 4vw, 20px);
   font-weight: 600;
   font-family: "Poppins", sans-serif;
   color: #fd5f36;
 }
 
 .teamHeadingTwo {
-  font-size: 48px;
+  font-size: clamp(28px, 6vw, 48px);
   font-weight: 600;
-  line-height: 62px;
+  line-height: clamp(36px, 6vw, 62px);
   font-family: "Poppins", sans-serif;
   color: #fff;
 }
 
-/* animation area start */
-
+/* ------------------ ANIMATION AREA ------------------ */
 .moonAnimation {
   position: absolute;
   right: -10%;
   top: -10%;
   animation: moonani 4s linear infinite;
 }
+
 @keyframes moonani {
   0% {
     right: -10%;
@@ -45,6 +46,7 @@
     top: -13%;
   }
 }
+
 .lasesAnimation {
   position: absolute;
   top: 70%;
@@ -52,6 +54,7 @@
   left: 0;
   animation: lasesani 6s linear infinite;
 }
+
 @keyframes lasesani {
   0% {
     top: 70%;
@@ -65,14 +68,70 @@
   }
 }
 
-/* animation area end*/
-
-/* team section One end */
-
+/* ------------------ TEAM SECTION TWO ------------------ */
 .teamTwoElement {
   /* margin: 0 10px; */
 }
+
 .teamTwoMain {
   position: relative;
   transform: translateY(-49%);
+}
+
+/* ------------------ MOBILE OPTIMIZATION ------------------ */
+@media (max-width: 768px) {
+  .teamHeadingTwo {
+    font-size: clamp(24px, 8vw, 36px);
+    line-height: clamp(30px, 8vw, 48px);
+    text-align: center;
+  }
+
+  .teamHeadingOne {
+    font-size: clamp(12px, 4vw, 18px);
+  }
+
+  .teamOneMain {
+    padding: clamp(40px, 8vw, 60px) 5% clamp(60px, 10vw, 120px);
+  }
+
+  .lasesAnimation {
+    top: 75%;
+  }
+
+  .moonAnimation {
+    right: -12%;
+    top: -12%;
+  }
+
+  .teamTwoMain {
+    transform: translateY(-35%);
+  }
+}
+
+@media (max-width: 480px) {
+  .teamHeadingTwo {
+    font-size: clamp(20px, 10vw, 28px);
+    line-height: clamp(26px, 10vw, 36px);
+  }
+
+  .teamHeadingOne {
+    font-size: clamp(10px, 5vw, 16px);
+  }
+
+  .teamOneMain {
+    padding: clamp(30px, 8vw, 50px) 5% clamp(40px, 8vw, 80px);
+  }
+
+  .lasesAnimation {
+    top: 80%;
+  }
+
+  .moonAnimation {
+    right: -15%;
+    top: -15%;
+  }
+
+  .teamTwoMain {
+    transform: translateY(-25%);
+  }
 }
