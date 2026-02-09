@@ -74,7 +74,7 @@ const Bannar = () => {
               </div>
             </div>
           </Col>
-          <Col lg={6}></Col>
+     
         </Row>
       </Container>
     </section>
